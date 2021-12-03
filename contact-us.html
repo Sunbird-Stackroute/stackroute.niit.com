@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Welcome to StackRoute Labs, the innovation hub of StackRoute" />
+    <title>Stackroute Labs</title>
+    <link rel="icon" type="image/x-icon" href="images/New-Logo.png" />
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <link type="text/css" rel="stylesheet" href="css/media.css" />
+
+    <title>StackRoute Labs</title>
+
+    <style>
+        .spinner {
+            top: 17px;
+            display: none;
+            position: absolute;
+            right: 28px;
+            width: 28px;
+            height: 16px;
+        }
+
+        .spinner div {
+            transform-origin: 12px 8px;
+        }
+
+        .spinner div:after {
+            top: -5px;
+            left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="fixed-left">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/New-Logo.png" class="responsive-img"/>
+            </a>
+        </div>
+        <a href="http://www.stackroute.in/" class="lab-link" target="_blank">StackRoute Home</a>
+        <div class="menu">
+            <a href="#" class="menu-icon sidenav-trigger" data-target="slide-out">
+                <span class="icon-wrapper  waves-effect waves-light "><img src="images/menu_icon.svg" class="responsive-img"/></span>
+                <span class="text waves-effect waves-light">Menu</span>
+            </a>
+            <div class="fullscreen-menu sidenav" id="slide-out">
+                <div class="left">
+                    <a href="#" class="menu-icon sidenav-close">
+                        <span class="icon-wrapper  waves-effect waves-light"><img src="images/close_button.svg" class="responsive-img"/></span>
+                        <span class="text waves-effect waves-light">Menu</span>
+                    </a>
+                    <div class="menu-list">
+                        <ul>
+                            <li><a href="index.html#StackRouteLabs">StackRoute Labs</a></li>
+                            <li><a href="index.html#VisionMission">Vision & Mission</a></li>
+                            <li><a href="index.html#OurWork">Our Work</a></li>
+                            <li><a href="index.html#">Join Us</a></li>
+                            <li><a href="index.html#">Contact Us</a></li>
+                        </ul>
+                        <ul class="link-bottom">
+                            <!-- <li><a href="#">Terms of Use</a></li> -->
+                            <li><a href="https://privacy.niit.com/prospective_customer.html">Privacy Statement</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- <div class="right">
+                    <p class="follow-us">Follow Us<span class="line-wrap"><span class="line"></span></span>
+                    </p>
+                    <div class="links">
+                        <a href="#"><span><img src="images/facebook-white.svg"/></span></a>
+                        <a href="#"><span><img src="images/twitter-white.svg"/></span></a>
+                        <a href="#"><span><img src="images/insta-white.svg"/></span></a>
+                        <a href="#"><span><img src="images/youtube-white.svg"/></span></a>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <div class="scroll">
+            <a href="#" class="waves-effect waves-light">
+                <img src="images/scroll_element.svg" class="responsive-img"/>
+                <span>Scroll</span>
+            </a>
+        </div>
+    </header>
+
+    <header class="mobile">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/New-Logo.png" class="responsive-img"/>
+            </a>
+        </div>
+        <a href="#" class="menu-icon sidenav-trigger" data-target="slide-out">
+            <span class="icon-wrapper  waves-effect waves-light "><img src="images/menu_icon.svg" class="responsive-img"/></span>
+            <span class="text waves-effect waves-light">Menu</span>
+        </a>
+        <a href="contact-us.html" class="contact-btn">
+            Contact Us
+        </a>
+    </header>
+
+
+    <main>
+
+        <section class="section contact-us bg-dark">
+            <div class="container">
+                <div class="sec-head">
+                    <h4>Reach out to us!</h4>
+                    <p>Got a question about our programs? Interested in partnering with us? Got suggestions or just want to say hi? Contact us below:</p>
+                </div>
+
+                <div class="contact-cards">
+                    <div class="card-left">
+                        <div class="cont-details">
+                            <div class="icon">
+                                <img src="images/mobile_icon.svg" />
+                            </div>
+
+                             <a style="padding-left: 27px;" href="tel:+91 9810798379">+91 9810798379</a>
+                        </div>
+                        <div class="cont-details">
+                            <div class="icon">
+                                <img src="images/Email_icon.svg" />
+                            </div>
+                            <a href="mailto:contact@stackroute.in" class="text">contact@stackroute.in</a>
+                        </div>
+                        <div class="cont-details">
+                            <div class="icon">
+                                <img src="images/location_icon.svg" />
+                            </div>
+                            <p class="text">1660, 3rd floor, 27th Main Rd, Parangi Palaya, Sector 2, HSR Layout, Bengaluru, Karnataka 560102
+            <a href="https://goo.gl/maps/ykY6Ef27dGrJ78AH8" target="_blank">Get Directions →</a>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-right">
+                        <ul class="tabs" id="contact-us-tabs">
+                            <li class="tab"><a href="#ContactUs" class="active">Contact Us</a></li>
+                            <!--<li class="tab"><a href="#JoinUs">Join Us</a></li>-->
+                        </ul>
+
+                        <div id="ContactUs">
+                            <form class="contact-us-form" id="contact-us">
+                                <div class="row">
+                                    <div class="input-field col s6">
+                                        <input id="full_name" type="text" class="validate browser-default" required>
+                                        <label for="full_name">Full Name</label>
+                                        <span class="helper-text">*Required</span>
+                                    </div>
+                                    <div class="input-field col s6">
+                                        <input id="email" type="email" class="validate browser-default" required>
+                                        <label for="email">Email</label>
+                                        <span class="helper-text" data-error="wrong" data-success="right">*Required</span>
+                                    </div>
+                                    <div class="input-field col s6">
+                                        <input id="number" type="text" class="validate browser-default">
+                                        <label for="number">Phone Number</label>
+                                        <!--<span class="helper-text"  data-error="wrong" data-success="right">*Required</span>-->
+                                    </div>
+                                    <div class="input-field col s6">
+                                        <input id="company" type="text" class="validate browser-default">
+                                        <label for="company">Company</label>
+                                    </div>
+                                    <div class="input-field col s12">
+                                        <textarea id="requirement" class="validate browser-default" rows="7"></textarea>
+                                        <label for="requirement">Tell us about your requirement</label>
+                                    </div>
+                                    <div class="input-field col s12">
+                                        <label class="check">
+											<input type="checkbox" checked/>
+											<span>Please tick this box to indicate that understand that your personal data will be used in accordance with the <a href="https://privacy.niit.com/prospective_customer.html">Privacy Policy</a> here *</span>
+										</label>
+                                    </div>
+
+                                    <div class="right-align col s12">
+                                        <button class="btn-custom-light waves-effect" id="contact-form" type="submit">
+										
+										Send <i class="material-icons">arrow_forward</i>
+										<div class="spinner">
+											<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+										</div>
+										</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- <div id="JoinUs">
+                            <form class="contact-us-form">
+                                <div class="row">
+                                    <div class="input-field col s6">
+                                        <input id="j_full_name" type="text" class="validate browser-default" required>
+                                        <label for="j_full_name1">Full Name</label>
+                                        <span class="helper-text">*Required</span>
+                                    </div>
+                                    <div class="input-field col s6">
+                                        <input id="j_email" type="email" class="validate browser-default" required>
+                                        <label for="j_email">Email</label>
+                                        <span class="helper-text"  data-error="wrong" data-success="right">*Required</span>
+                                    </div>
+                                    <div class="input-field col s6">
+                                        <input id="j_number" type="text" class="validate browser-default" required>
+                                        <label for="j_number">Phone Number</label>
+										<span class="helper-text"  data-error="wrong" data-success="right">*Required</span>
+                                    </div>
+                                    <div class="input-field col s6" required>
+                                        <input id="j_Designation" type="text" class="validate browser-default">
+                                        <label for="j_Designation">Designation</label>
+										<span class="helper-text"  data-error="wrong" data-success="right">*Required</span>
+                                    </div>
+                                    <div class="input-field  col s12">
+                                        <div class="file-field input-field">
+                                            <div class="btn">
+                                                <span>Resume</span>
+                                                <input id="j_file" type="file" id="Resume">
+                                            </div>
+                                            <div class="file-path-wrapper">
+                                                <input class="file-path validate browser-default" type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+									
+
+                                    <div class="right-align col s12">
+                                        <button class="btn-custom-light waves-effect" id="join-us" type="submit">Send <i class="material-icons">arrow_forward</i></button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer start -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col m11">
+                    <div class="row footer-top">
+                        <div class="col s6">
+                            <div class="contact-info">
+                                <p>Start a conversation</p>
+                                <a href="mailto:contact@stackroute.in">contact@stackroute.in</a>
+            <a href="tel:+91 9810798379">+91 9810798379</a>
+                            </div>
+                        </div>
+                        <div class="col s6">
+                            <!-- <div class="social-links right-align">
+                                <a href="#"><span><img src="images/facebook-white.svg"/></span></a>
+                                <a href="#"><span><img src="images/twitter-white.svg"/></span></a>
+                                <a href="#"><span><img src="images/insta-white.svg"/></span></a>
+                                <a href="#"><span><img src="images/youtube-white.svg"/></span></a>
+                            </div> -->
+                            <div class="tNc right-align">
+                                <!-- <a href="#">Terms of Use</a>
+                                <span>|</span> -->
+                                <a href="https://privacy.niit.com/prospective_customer.html" target="_blank">Privacy Statement</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row footer-bootom">
+                        <div class="col s12">
+                            <p class="copyright">Copyright © 2021 StackRoute. All rights reserved</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#contact-us').submit(function(e) {
+                e.preventDefault();
+                if ($('#full_name').val() && $('#email').val()) {
+                    $('#contact-form').attr('disabled', 'true').css('pointer-events', 'none').find('.spinner').show();
+                    $('#contact-form').find('span').text('Sending');
+                    $('#contact-form').find('i').css('visibility', 'hidden');
+                    $.ajax({
+                        url: "http://www.labs.stackroute.io/StackRoute-API/api/Drupal/PostDataStackroute",
+                        method: 'GET',
+                        headers: {
+                            'Token': 'a4P4M9fF3pIgd4Vso3Iqaa3qDPRTcptquTV6eKODNtcS1bUe4+6QDQ==',
+                            'Content-Type': 'application/json',
+                            'Access-Control-Allow-Credentials': true
+                        },
+                        data: {
+                            Name: $('#full_name').val(),
+                            EmailID: $('#email').val(),
+                            PhoneNo: $('#number').val(),
+                            CompanyName: $('#company').val(),
+                            Query: $('#requirement').val(),
+                            Category: 'STACKROUTE-LAB',
+                            PortalName: 'B2B',
+                            ApplicationName: 'STACKROUTE-LAB'
+                        },
+                        dataType: 'json',
+                        success: function(res) {
+                            $('#contact-form').attr('disabled', 'false').css('pointer-events', '').text('Send').find('.spinner').hide();
+                            $('#contact-form').find('span').text('Send');
+                            $('#contact-form').find('i').css('visibility', 'visible');
+                            window.location = "thankyou.html";
+                        }
+                    });
+                }
+                window.location = "thankyou.html";
+            });
+        });
+    </script>
+
+</body>
+
+</html>

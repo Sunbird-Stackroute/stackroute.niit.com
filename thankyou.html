@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Stackroute Labs</title>
+    <link rel="icon" type="image/x-icon" href="images/New-Logo.png" />
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <link type="text/css" rel="stylesheet" href="css/media.css" />
+
+    <title>Stackroute</title>
+</head>
+
+<body>
+
+    <header class="fixed-left">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/New-Logo.png" class="responsive-img"/>
+            </a>
+        </div>
+        <a href="#" class="lab-link">Home</a>
+        <div class="menu">
+            <a href="#" class="menu-icon sidenav-trigger" data-target="slide-out">
+                <span class="icon-wrapper  waves-effect waves-light "><img src="images/menu_icon.svg" class="responsive-img"/></span>
+                <span class="text waves-effect waves-light">Menu</span>
+            </a>
+            <div class="fullscreen-menu sidenav" id="slide-out">
+                <div class="left">
+                    <a href="#" class="menu-icon sidenav-close">
+                        <span class="icon-wrapper  waves-effect waves-light"><img src="images/close_button.svg" class="responsive-img"/></span>
+                        <span class="text waves-effect waves-light">Menu</span>
+                    </a>
+                    <div class="menu-list">
+                        <ul>
+                            <li><a href="#">StackRoute Labs</a></li>
+                            <li><a href="#">Vision & Mission</a></li>
+                            <li><a href="#">Our Work</a></li>
+                            <li><a href="#">Join Us</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                        <ul class="link-bottom">
+                            <li><a href="#">Terms of Use</a></li>
+                            <li><a href="#">Privacy Statement</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="right">
+                    <p class="follow-us">Follow Us<span class="line-wrap"><span class="line"></span></span>
+                    </p>
+                    <div class="links">
+                        <a href="#"><span><img src="images/facebook-white.svg"/></span></a>
+                        <a href="#"><span><img src="images/twitter-white.svg"/></span></a>
+                        <a href="#"><span><img src="images/insta-white.svg"/></span></a>
+                        <a href="#"><span><img src="images/youtube-white.svg"/></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll">
+            <a href="#" class="waves-effect waves-light">
+                <img src="images/scroll_element.svg" class="responsive-img"/>
+                <span>Scroll</span>
+            </a>
+        </div>
+    </header>
+
+    <header class="mobile">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/New-Logo.png" class="responsive-img"/>
+            </a>
+        </div>
+        <a href="#" class="menu-icon sidenav-trigger" data-target="slide-out">
+            <span class="icon-wrapper  waves-effect waves-light "><img src="images/menu_icon.svg" class="responsive-img"/></span>
+            <span class="text waves-effect waves-light">Menu</span>
+        </a>
+        <a href="contact-us.html" class="contact-btn">
+            Contact Us
+        </a>
+    </header>
+
+    <main>
+
+        <section class="section contact-us thankyou-sec bg-dark">
+            <div class="container">
+                <div class="thank-you sec-head">
+                    <span class="icon"><img src="images/thank_you__icon.svg"/></span>
+                    <h3>Submission Received!</h3>
+                    <p>Thank you for the enquiry. Unless there’s a ‘force majeure’, you can expect our reply within 1 business day.</p>
+                    <div class="redircting_msgs">
+                        <div class="spinner">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        Redirecting to home in <span id="count">9</span> secs
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <script>
+        $(document).ready(function() {
+            var count = $('#count').text();
+
+            setInterval(function() {
+                count--;
+                $('#count').text(count);
+                if (count == 0) {
+                    window.location = 'index.html';
+                    clearInterval();
+                }
+
+            }, 1000);
+        });
+    </script>
+</body>
+
+</html>
